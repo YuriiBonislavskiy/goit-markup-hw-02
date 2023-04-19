@@ -1,0 +1,70 @@
+.logo {
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+.p_nav {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #757575;
+}
+
+.p_button {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    align-content: center;
+    height: 38px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.p_button:hover {
+    background: #2196F3;
+    color: #ffffff;
+}
+
+.p_ul li {
+    height: 404px;
+    width: 370px;
+    border-radius: 0px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #757575;
+}
+
+.p_ul li:hover {
+    border-color: #2196F3;
+    border-style: solid
+}
+
+.p_h3 {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #212121;
+}
+
+.p_footer {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
