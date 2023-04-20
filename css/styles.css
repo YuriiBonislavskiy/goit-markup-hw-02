@@ -1,24 +1,26 @@
-.logo {
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    text-align: left;
+body {
+    font-family: Roboto;
+    color: #757575;
 }
 
-.p_nav {
-    font-family: Roboto;
+.p-link {
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
     text-align: left;
-    color: #757575;
+    color: #212121
 }
 
-.p_button {
-    font-family: Roboto;
+.p-link:hover {
+    color: #2196F3
+}
+
+.p-link:focus {
+    color: #2196F3
+}
+
+.p-button {
     font-weight: 500;
     font-size: 16px;
     align-content: center;
@@ -27,31 +29,33 @@
     border-radius: 4px;
 }
 
-.p_button:hover {
+.p-button:hover {
     background: #2196F3;
     color: #ffffff;
 }
 
-.p_ul li {
+.p-button:focus {
+    background: #2196F3;
+    color: #ffffff;
+}
+
+.p-ul li {
     height: 404px;
     width: 370px;
     border-radius: 0px;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.03em;
     text-align: left;
-    color: #757575;
 }
 
-.p_ul li:hover {
+.p-ul li:hover {
     border-color: #2196F3;
     border-style: solid
 }
 
-.p_h3 {
-    font-family: Roboto;
+.p-h3 {
     font-size: 18px;
     font-weight: 700;
     line-height: 36px;
@@ -60,8 +64,7 @@
     color: #212121;
 }
 
-.p_footer {
-    font-family: Roboto;
+.p-footer {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
