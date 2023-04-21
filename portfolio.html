@@ -13,73 +13,75 @@
 
 <body>
     <header>
-        <a href="">WebStudio</a>
+        <a href="./index.html" class="f-logo"><span>Web</span>Studio</a>
         <nav>
-            <ul>
-                <li><a class="p-link" href="./index.html">Студія</a></li>
-                <li><a class="p-link" href="./portfolio.html">Портфоліо</a></li>
-                <li><a class="p-link" href="">Контакти</a></li>
+            <ul class="f-menu">
+                <li><a class="f-menu-item" href="./index.html">Студія</a></li>
+                <li><a class="f-menu-item" id="current-page" href="./portfolio.html">Портфоліо</a></li>
+                <li><a class="f-menu-item" href="">Контакти</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><a class="p-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="p-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="f-contacts">
+            <li><a class="f-contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="f-contacts-item" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
 
     <main>
         <section>
-            <button type="button" class="p-button" id="p-button1">Усі</button>
-            <button type="button" class="p-button" id="p-button2">Веб-сайти</button>
-            <button type="button" class="p-button" id="p-button3">Додатки</button>
-            <button type="button" class="p-button" id="p-button4">Дизайн</button>
-            <button type="button" class="p-button" id="p-button5">Маркетинг</button>
+            <ul class="button-list">
+                <li><button type="button" class="p-button" id="p-button1">Усі</button></li>
+                <li><button type="button" class="p-button">Веб-сайти</button></li>
+                <li><button type="button" class="p-button">Додатки</button></li>
+                <li><button type="button" class="p-button">Дизайн</button></li>
+                <li><button type="button" class="p-button">Маркетинг</button></li>
+            </ul>
         </section>
         <section>
-            <ul class="p-ul">
-                <li>
+            <ul class="progect-list">
+                <li class="progect-item">
                     <img src="./images/portfolio1.jpg" alt="Технокряк" width="370" height="294">
-                    <h3 class="p-h3">Технокряк</h3>
+                    <h3>Технокряк</h3>
                     <p>Веб-сайт</p>
                 </li>
-                <li>
+                <li class="progect-item">
                     <img src="./images/portfolio2.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
-                    <h3 class="p-h3">Постер New Orlean vs Golden Star</h3>
+                    <h3>Постер New Orlean vs Golden Star</h3>
                     <p>Дизайн</p>
                 </li>
-                <li>
+                <li class="progect-item">
                     <img src="./images/portfolio3.jpg" alt="Ресторан Seafood" width="370" height="294">
-                    <h3 class="p-h3">Ресторан Seafood</h3>
+                    <h3>Ресторан Seafood</h3>
                     <p>Додаток</p>
                 </li>
-                <li>
+                <li class="progect-item">
                     <img src="./images/portfolio4.jpg" alt="Проєкт Prime" width="370" height="294">
-                    <h3 class="p-h3">Проєкт Prime</h3>
+                    <h3>Проєкт Prime</h3>
                     <p>Маркетинг</p>
                 </li>
-                <li>
+                <li class="progect-item">
                     <img src="./images/portfolio5.jpg" alt="Проєкт Boxes" width="370" height="294">
-                    <h3 class="p-h3">Проєкт Boxes</h3>
+                    <h3>Проєкт Boxes</h3>
                     <p>Додаток</p>
                 </li>
-                <li>
+                <li class="progect-item">
                     <img src="./images/portfolio6.jpg" alt="Inspiration has no Borders" width="370" height="294">
-                    <h3 class="p-h3">Inspiration has no Borders</h3>
+                    <h3>Inspiration has no Borders</h3>
                     <p>Веб-сайт</p>
                 </li>
-                <li>
+                <li class="progect-item">
                     <img src="./images/portfolio7.jpg" alt="Видання Limited Edition" width="370" height="294">
-                    <h3 class="p-h3">Inspiration has no Borders</h3>
+                    <h3>Inspiration has no Borders</h3>
                     <p>Дизайн</p>
                 </li>
-                <li>
+                <li class="progect-item">
                     <img src="./images/portfolio8.jpg" alt="Проєкт LAB" width="370" height="294">
-                    <h3 class="p-h3">Проєкт LAB</h3>
+                    <h3>Проєкт LAB</h3>
                     <p>Маркетинг</p>
                 </li>
-                <li>
+                <li class="progect-item">
                     <img src="./images/portfolio9.jpg" alt="Growing Business" width="370" height="294">
-                    <h3 class="p-h3">Growing Business</h3>
+                    <h3>Growing Business</h3>
                     <p>Додаток</p>
                 </li>
             </ul>
@@ -87,12 +89,16 @@
     </main>
 
     <footer>
-        <a href="">WebStudio</a>
-        <address>
-            м. Київ, пр-т Лесі Українки, 26
-            <a class="p-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="p-link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
+        <section class="basement">
+            <a href="" class="f-logo"><span>Web</span>Studio</a>
+            <address>
+                <ul class="basement-list">
+                    <li>м. Київ, пр-т Лесі Українки, 26</li>
+                    <li><a class="basement-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="basement-item" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </section>
     </footer>
 </body>
 

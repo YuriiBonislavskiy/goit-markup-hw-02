@@ -13,88 +13,94 @@
 
 <body>
     <header>
-        <a href="">WebStudio</a>
+        <a href="./index.html" class="f-logo"><span>Web</span>Studio</a>
         <nav>
-            <ul>
-                <li><a class="p-link" href="./index.html">Студія</a></li>
-                <li><a class="p-link" href="./portfolio.html">Портфоліо</a></li>
-                <li><a class="p-link" href="">Контакти</a></li>
+            <ul class="f-menu-list">
+                <li><a class="f-menu-item" id="current-page" href="./index.html">Студія</a></li>
+                <li><a class="f-menu-item" href="./portfolio.html">Портфоліо</a></li>
+                <li><a class="f-menu-item" href="">Контакти</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><a class="p-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="p-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="f-contacts-list">
+            <li><a class="f-contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="f-contacts-item" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
 
     <main>
-        <section>
+        <section class="bg">
             <h1>
-                ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br> ВАШОГО БІЗНЕСУ
+                ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ
             </h1>
             <button type="button">Замовити послугу</button>
         </section>
-        <section>
-            <ul>
-                <li>
-                    <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
+        <section class="f-services">
+            <ul class="f-services-list">
+                <li class="f-services-item">
+                    <h4>УВАГА ДО ДЕТАЛЕЙ</h4>
                     <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                 </li>
-                <li>
-                    <h3>ПУНКТУАЛЬНІСТЬ</h3>
+                <li class="f-services-item">
+                    <h4>ПУНКТУАЛЬНІСТЬ</h4>
                     <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                 </li>
-                <li>
-                    <h3>ПЛАНУВАННЯ</h3>
+                <li class="f-services-item">
+                    <h4>ПЛАНУВАННЯ</h4>
                     <p>Так само консультація з широким активом значною мірою зумовлює.</p>
                 </li>
-                <li>
-                    <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <li class="f-services-item">
+                    <h4>СУЧАСНІ ТЕХНОЛОГІЇ</h4>
                     <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            </ul>
+        </section>
+        <section class="what-doing">
+            <h2>Чим ми займаємось</h2>
+            <ul class="what-doing-list">
+                <li><img class="what-doing-item" src="./images/imga.jpg" alt="Десктопні додатки" width="370"></li>
+                <li><img class="what-doing-item" src="./images/imgb.jpg" alt="Мобільні додатки" width="370"></li>
+                <li><img class="what-doing-item" src="./images/imgc.jpg" alt="Дизайнерські рішення" width="370">
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>Чим ми займаємось</h2>
-            <ul>
-                <li><img src="./images/imga.jpg" alt="Десктопні додатки" width="370"></li>
-                <li><img src="./images/imgb.jpg" alt="Мобільні додатки" width="370"></li>
-                <li><img src="./images/imgc.jpg" alt="Дизайнерські рішення" width="370"></li>
-            </ul>
-        </section>
 
-        <section>
+        <section class="team">
             <h2>Наша команда</h2>
-            <ul>
-                <li>
-                    <img src="./images/teama.jpg" alt="Prodoct Designer" width="270">
+            <ul class="team-list">
+                <li class="team-item">
+                    <img class="team-image" src="./images/teama.jpg" alt="Prodoct Designer" width="270">
                     <h3>Ігор Дем'яненко</h3>
                     <p>Prodoct Designer</p>
-
                 </li>
-                <li>
-                    <img src="./images/teamb.jpg" alt="Frontend Developer" width="270">
+                <li class="team-item">
+                    <img class="team-image" src="./images/teamb.jpg" alt="Frontend Developer" width="270">
                     <h3>Ольга Рєпіна</h3>
                     <p>Frontend Developer</p>
-
                 </li>
-                <li>
-                    <img src="./images/teamc.jpg" alt="Marketing" width="270">
+                <li class="team-item">
+                    <img class="team-image" src="./images/teamc.jpg" alt="Marketing" width="270">
                     <h3>Микола Тарасов</h3>
                     <p>Marketing</p>
-
+                </li>
+                <li class="team-item">
+                    <img class="team-image" src="./images/teamd.jpg" alt="UI Designer" width="270">
+                    <h3>Михайло Єрмаков</h3>
+                    <p>UI Designer</p>
                 </li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <a href="">WebStudio</a>
-        <address>
-            м. Київ, пр-т Лесі Українки, 26
-            <a class="p-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="p-link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
+        <section class="basement">
+            <a href="" class="f-logo"><span>Web</span>Studio</a>
+            <address>
+                <ul class="basement-list">
+                    <li>м. Київ, пр-т Лесі Українки, 26</li>
+                    <li><a class="basement-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="basement-item" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </section>
     </footer>
 
 </body>
