@@ -169,6 +169,10 @@ h4 {
     color: var(--bg-base-color);
 }
 
+.basement>address {
+    font-style: normal;
+}
+
 .basement>address>h4 {
     color: var(--base-color);
 }
