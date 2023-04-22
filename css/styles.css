@@ -1,70 +1,67 @@
+/* Задання CSS-змінних */
 :root {
     --base-color: #757575;
-    --bg-base-color: #FFFFFF;
+    --base-color2: #FFFFFF;
     --header-color: #000000;
+    --menu-item-color: #212121;
+    --select-color: #2196F3;
+    --background-dark: #2F303A;
+    --background-light: #F5F4FA;
 }
 
+/* Глобальні CSS-стилі */
 body {
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
     color: var(--base-color);
 }
 
-h1 {
-    font-size: 44px;
+/* Стилі заголовків */
+.my-header1 {
     font-weight: 900;
-    line-height: 60px;
+    font-size: 44px;
+    line-height: 1.363636;
     letter-spacing: 0.06em;
     text-align: center;
 }
 
-h2 {
-    font-size: 36px;
+.my-header2 {
     font-weight: 700;
-    line-height: 42px;
+    font-size: 36px;
+    line-height: 1.171944;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.my-header3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.172143;
     letter-spacing: 0.03em;
 }
 
-h3 {
-    font-size: 18px;
+.my-header5 {
     font-weight: 700;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 2.0;
     letter-spacing: 0.06em;
 }
 
-h4 {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
+.my-header4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.171875;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 
-h2,
-h3,
-h4 {
+.my-header2,
+.my-header3,
+.my-header4,
+.my-header5 {
     color: var(--header-color);
 }
 
-.top-logo,
-.bottom-logo {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    color: #212121;
-    text-decoration: none;
-}
-
-.bottom-logo {
-    color: var(--base-color);
-}
-
-.top-logo>span,
-.bottom-logo>span {
-    color: #2196F3;
-}
-
+/* Прибирання крапок в Тегу <li> */
 .f-menu-list,
 .f-contacts-list,
 .f-services-list,
@@ -72,139 +69,180 @@ h4 {
 .team-list,
 .basement-list,
 .button-list,
-.progect-list {
+.project-list {
     list-style-type: none;
 }
 
-.f-menu-item {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    color: #212121;
+/* Стилі у HOVER і FOCUS*/
+.f-menu-item:hover,
+.f-menu-iten:focus,
+.f-contacts-item:hover,
+.f-contacts-item:focus {
+    color: var(--select-color);
+}
+
+/* Стилі у HEDER і FOOTER*/
+/*          Верхній-Нижній Логотипи */
+
+.top-logo,
+.bottom-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192308;
+    letter-spacing: 0.03em;
+    color: var(--menu-item-color);
     text-decoration: none;
 }
 
-#current-page {
-    color: #2196F3;
+.top-logo>span,
+.bottom-logo>span {
+    color: var(--select-color);
 }
 
-.f-menu-item:hover,
-.f-menu-iten:focus {
-    color: #2196F3;
+.bottom-logo {
+    color: var(--base-color2);
+}
+
+/*                           HEDER */
+.f-menu-item,
+.f-contacts-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.172143;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.f-menu-item {
+    color: var(--menu-item-color);
 }
 
 .f-contacts-item {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.02em;
     color: var(--base-color);
+}
+
+#current-page {
+    color: var(--select-color);
+}
+
+
+
+/*                          FOOTER */
+.basement {
+    color: var(--base-color);
+    background-color: var(--background-dark);
+}
+
+.basement>address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: var(--base-color2);
+}
+
+.basement-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714286;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
 
-.f-contacts-item:hover,
-.f-contacts-item:focus {
-    color: #2196F3;
+.basement-item:hover,
+.basement-item:focus {
+    color: var(--base-color2);
 }
 
+
+/* Сторінка СТУДІЯ */
+/* Стилі у MAIN */
+/*                              Блок BG */
 .bg {
-    background: #2F303A;
-    color: var(--bg-base-color);
+    background: var(--background-dark);
+    color: var(--base-color2);
     text-align: center;
 }
 
 .bg>button {
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 1.875;
     letter-spacing: 0.06em;
     border: none;
-    background-color: #2196F3;
-    color: var(--bg-base-color);
+    background-color: var(--select-color);
+    color: var(--base-color2);
 }
 
-.bg>button:hover,
-.bg>button:focus {
-    border: 1px solid #d80d0d;
-}
-
+/*                              Блок СЕРВІСИ */
 .f-services-item {
+    font-weight: 400;
     font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.02em;
+    line-height: 1.714286;
+    letter-spacing: 0.03em;
     text-align: left;
     color: var(--base-color);
-}
-
-.what-doing>h2 {
-    text-align: center;
 }
 
 .what-doing-item {
     text-align: left;
 }
 
+/*                              Блок КОМАНДА */
 .team {
-    text-align: center;
-    background-color: #F5F4FA;
+    background-color: var(--background-light);
 }
 
-.basement {
-    color: var(--base-color);
-    background-color: #2F303A;
-}
-
-.basement-item {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    color: var(--base-color);
-    text-decoration: none;
-}
-
-.basement-item:hover,
-.basement-item:focus {
-    color: var(--bg-base-color);
-}
-
-.basement>address {
-    font-style: normal;
-}
-
-.basement>address>h4 {
-    color: var(--base-color);
-}
-
-.p-button {
-    font-weight: 500;
+.team-position {
     font-size: 16px;
-    align-content: center;
-    height: 38px;
-    background: #F5F4FA;
+    font-weight: 400;
+    line-height: 1.171875;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+/* Сторінка ПОРТФОЛІО */
+/*                              Блок КНОПКИ */
+.p-button {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.625;
+    letter-spacing: 0.03em;
+    text-align: center;
+    background: var(--background-light);
     border-radius: 4px;
 }
 
 .p-button:hover,
 .p-button:focus {
-    background-color: #2196F3;
-    color: var(--bg-base-color);
+    background-color: var(--select-color);
+    color: var(--base-color2);
 }
 
 #p-button1 {
-    background-color: #2196F3;
-    color: var(--bg-base-color);
+    background-color: var(--select-color);
+    color: var(--base-color2);
 }
 
-.progect-item {
-    font-size: 16px;
+/*                              Блок ПРОЄКТИ */
+.project-item {
     font-weight: 400;
-    line-height: 30px;
-    text-align: left;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    text-decoration: none;
 }
 
-.progect-item:hover,
-.progect-item:focus {
-    border: 1px solid #2196F3;
+.project-type {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: var(--base-color);
+    text-decoration: none;
 }
