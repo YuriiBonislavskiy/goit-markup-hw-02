@@ -32,21 +32,21 @@ body {
     text-align: center;
 }
 
-.my-header3 {
+.my-header3-1 {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.172143;
     letter-spacing: 0.03em;
 }
 
-.my-header5 {
+.my-header3-3 {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
 }
 
-.my-header4 {
+.my-header3-2 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.171875;
@@ -55,9 +55,9 @@ body {
 }
 
 .my-header2,
-.my-header3,
-.my-header4,
-.my-header5 {
+.my-header3-1,
+.my-header3-2,
+.my-header3-3 {
     color: var(--header-color);
 }
 
